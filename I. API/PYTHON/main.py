@@ -418,13 +418,13 @@ def ConsultsQuantity(iddoctor):
 app = FastAPI()
 
 #ORÍGENES DESCONOCIDOS
-#app.add_middleware(
-#    CORSMiddleware,
-#    allow_origins=["*"],
-#    allow_credentials=True,
-#    allow_methods=["*"],
-#    allow_headers=["*"]
-#)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 #MÉTODOS JSON
 
